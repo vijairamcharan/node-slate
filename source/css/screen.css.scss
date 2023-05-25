@@ -79,7 +79,7 @@ html, body {
       }
    &>img {  //logo at the top of the ToC
       display: block;
-      max-width: 80%;
+      max-width: 70%;
       max-height: 100px;
       margin: $logo-margin auto 0px auto;
       }
@@ -151,6 +151,8 @@ html, body {
       line-height: 28px;
       }
    li {
+      padding-top: 8px;
+      padding-bottom: 8px;
       color: $nav-text;
       transition: background-color 230ms linear;
       }
@@ -293,18 +295,38 @@ html, body {
 .content {
    // Place content above the dark box
    position: relative;
+   padding: 100px;
    z-index: 30;
+   a {
+      color: white;
+   }
+   
+   code-method {
+      display: flex;
+   }
+   code-copy {
+      padding: $main-padding;
+      width: 40vw;
+      margin-right: 32px;
+      // p {
+      //    padding: $main-padding;
+      // }
+   }
+   code-example {
+      border-radius: 8px;
+      background-color: $code-annotation-bg;
+   }
    &::after {
       content: '';
       display: block;
       clear: both;
       }
    &>h1, &>h2, &>h3, &>h4, &>h5, &>h6, &>p, &>table, &>ul, &>ol, &>aside, &>dl {
-      margin-right: $examples-width;
+      // margin-right: $examples-width;
       padding: 0 $main-padding;
       box-sizing: border-box;
       display: block;
-      text-shadow: $main-embossed-text-shadow;
+      // text-shadow: $main-embossed-text-shadow;
       @extend %left-col;
       }
    &>ul, &>ol {
@@ -318,11 +340,11 @@ html, body {
       font-size: 30px;
       padding-top: 0.5em;
       padding-bottom: 0.5em;
-      border-bottom: 1px solid lightgray;
+      // border-bottom: 1px solid lightgray;
       margin-bottom: $h1-margin-bottom;
       margin-top: 2em;
-      border-top: 1px solid #ddd;
-      background-image: linear-gradient(to bottom, white, whitesmoke);
+      // border-top: 1px solid #ddd;
+      // background-image: linear-gradient(to bottom, white, whitesmoke);
       }
    h1:first-child, div:first-child + h1 {
       border-top-width: 0px;
@@ -409,9 +431,12 @@ html, body {
       }
    aside {
       @extend %icon-info-sign;
-      padding-top: 1em;
-      padding-bottom: 1em;
-      text-shadow: 0px 1px 0px lighten($aside-notice-bg, 15%);
+      border-radius: 8px;
+      // padding-top: 1em;
+      // padding-bottom: 1em;
+      padding: 16px;
+      color: #1f1f1f;
+      // text-shadow: 0px 1px 0px lighten($aside-notice-bg, 15%);
       margin-top: 1.5em;
       margin-bottom: 1.5em;
       background: $aside-notice-bg;
@@ -449,14 +474,14 @@ html, body {
 .content {
    pre, blockquote {
       @extend %right-col;
-      background-color: $code-bg;
+      // background-color: $code-bg;
       color: white;
       margin: 0px;
-      width: $examples-width;
-      float: right;
-      clear: right;
+      // width: $examples-width;
+      // float: right;
+      // clear: right;
       box-sizing: border-box;
-      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+      // text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
       &>p { margin: 0px; }
       a {
          color: white;
@@ -471,12 +496,13 @@ html, body {
    blockquote {
       padding: 0px;
       &>p {
-         background-color: $code-annotation-bg;
-         border-radius: 5px;
+         // background-color: $code-annotation-bg;
+
+         // border-radius: 5px;
          padding: $code-annotation-padding $main-padding;
          color: lightgray;
-         border-top: 1px solid black;
-         border-bottom: 1px solid #404040;
+         // border-top: 1px solid black;
+         // border-bottom: 1px solid #404040;
          }
       }
    }

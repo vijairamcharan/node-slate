@@ -50,6 +50,7 @@
    "dependencies": {
       "browser-sync": "~2.29",
       "chalk": "~5.2",
+      "fancy-log": "^2.0.0",
       "fuse.js": "~6.6",
       "gulp": "~4.0",
       "gulp-clean-css": "~4.3",

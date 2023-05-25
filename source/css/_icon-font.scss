@@ -8,6 +8,14 @@
    font-style: normal;
    }
 
+   @font-face {
+      font-family: 'nitti';
+      src:
+         url('../fonts/NittiGroteskNN-Heading.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      }
+
 @mixin Icon($glyphCode) {
    &::before {
       font-family: 'slate';
