@@ -123,7 +123,7 @@ html, body {
       // max-width: 70%;
       max-height: 80px;
       margin: $logo-margin auto 0px auto;
-      background-color: white;
+      // background-color: white;
       padding: 16px 32px;
       // border-radius: 8px;
       border-top-right-radius: 8px;
@@ -132,25 +132,25 @@ html, body {
    &>.search {
       position: relative;
       input {
-         background: $code-bg;
+         background: white;
          // border-width: 0px 0px 1px 0px;
          // border-color: $search-box-border-color;
          border: none;
          padding: 10px 20px 10px 30px;
          box-sizing: border-box;
-         // margin: $nav-v-padding $nav-padding;
-         margin-top: 8px;
+         margin: $nav-v-padding $nav-padding;
+         // margin-top: 8px;
          margin-bottom: 24px;
-         width: $nav-width;
+         width: $nav-width - 30;
          // outline: none;
          color: $nav-text;
          border-radius: 8px;  //ios has a default border radius
          }
       &::before {
          position: absolute;
-         top: 18px;         
+         top: 21px;         
          // left: $nav-padding;
-         left: 9px;
+         left: 23px;
          color: $nav-text;
          @extend %icon-search;
          }
@@ -210,8 +210,8 @@ html, body {
       box-shadow: 0px 1px 0px $nav-active-shadow;
       background-color: $nav-active-bg;
       color: $nav-active-text;
-      border-top-right-radius: 8px;
-      border-bottom-right-radius: 8px;
+      // border-top-right-radius: 8px;
+      // border-bottom-right-radius: 8px;
       }
    // Subheaders are the submenus that slide open in the table of contents.
    .tocify-subheader {
