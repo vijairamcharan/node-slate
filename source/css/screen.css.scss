@@ -317,7 +317,21 @@ html, body {
       background-color: $code-annotation-bg;
       position: sticky;
       align-self: flex-start;
-      top: 0;
+      top: 16px;
+
+      p {
+         padding: 13px 28px;
+         color: lightgray
+      }
+
+      a {
+         color: lightgray
+      }
+      h3 {
+         padding: 13px 28px;
+         margin-top: 16px;
+         margin-bottom: 0px;
+      }
    }
    &::after {
       content: '';

@@ -32,6 +32,14 @@ By recognizing and addressing the distinct purposes of each layer, engineers and
 
 </code-copy>
 
+<code-example>
+
+### Quickstart
+
+If you quickly want to get started with testing some APIs jump to the [Quickstart Guide](https://example.com/quickstart).
+
+</code-example>
+
 </code-method>
 
 # Authentication
