@@ -4,11 +4,13 @@
 
 <code-copy>
 
-Welcome to the NN API Docs! Your one stop shop to find out all about our APIs we have marked as being ready for prime-time.
+Welcome to the NN API Docs! Your one stop shop to find out all about our APIs we have marked as being ready for prime-time. A curated list if you will of APIs that demonstrate the quality of our API landscape.
 
 We have language bindings in cURL, TypeScript, Java and Python. You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
-This example API documentation page was created with [Slate](https://github.com/lord/slate). Feel free to edit it and use it as a base for your own API's documentation.
+## Applying a product mindset
+
+When approaching APIs, it is essential for engineers and architects to adopt a mindset that considers APIs as products rather than just technical components. Treating APIs as products emphasizes the need for careful planning, design, and maintenance throughout their lifecycle. Firstly, it is crucial to identify and understand the target audience and their specific needs. Just like any product, APIs should be user-centered, providing intuitive and well-documented interfaces. This involves creating clear and comprehensive documentation, sample code, and interactive tools that facilitate adoption and integration. Additionally, product thinking requires regular assessment and improvement of APIs based on user feedback and usage analytics. This iterative approach ensures that APIs evolve to meet the changing needs of their consumers. Lastly, providing support and engaging in active communication with API users are key aspects of maintaining a successful product. By adopting a product mindset, engineers and architects can enhance the usability, accessibility, and overall value of APIs, resulting in better developer experiences and successful integrations.
 
 </code-copy>
 
