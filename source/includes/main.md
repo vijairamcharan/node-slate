@@ -30,6 +30,24 @@ The Platform Layer focuses on the infrastructure and technical aspects of the AP
 
 By recognizing and addressing the distinct purposes of each layer, engineers and architects can develop and maintain APIs that offer exceptional experiences, are designed as valuable products, and are built on a solid platform foundation.
 
+## API Lifecycle
+
+API Stages help teams to introduce changes to the API landscape in a controlled way. The API metadata field allows consumers to monitor the stage field to ensure proper follow ups in case an API is marked deprecated.
+
+### Experimental Stage
+
+New APIs always start in the `Experimental` status. This allows a team to rapidly bring a subset of the desired API to production, and then further evolve it on production. Customer teams are already aware that an API is underway and can start testing the API and provide feedback or make contributions. APIs in the Experimental stage can have breaking changes before they are promoted to Stable.
+
+APIs in Experimental Stage are not recommended to be used for production use cases.
+
+### Stable Stage
+
+APIs that have been promoted to the Stable Stage will never have breaking changes within a version. In other words, adding new fields is perfectly fine. Renaming or deleting fields, or altering the behavior is a breaking change and therefore not allowed. The API owner can start working on a new major version to introduce breaking changes.
+
+### Deprecated Stage
+
+Once a new version or an alternative API is available, existing APIs can be marked as deprecated. A grace period of at least 6 months will allow consumers to move away from the deprecated version.
+
 </code-copy>
 
 <code-example>
